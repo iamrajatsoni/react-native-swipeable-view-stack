@@ -2,17 +2,29 @@
 
 > This is an interactive swipeable view stack npm package. Users can pan left or right on the frontmost view to naviagte to the next view. Data set is looped by defaut.
 
+## Swipeable View Stack for React Native
+![Alt text](https://cdn-images-1.medium.com/max/1600/1*fZMcXULoOCSGl8qBrHoILw.gif "Swipeable View Stack")
+
 ## Installation
 
 ```sh
 $ npm install --save react-native-swipeable-view-stack
 ```
 
-## Usage
-
+## Import and Usage
+1) Import
 ```js
-var reactNativeSwipeableViewStack = require('react-native-swipeable-view-stack');
+var ReactNativeSwipeableViewStack = require('react-native-swipeable-view-stack');
 reactNativeSwipeableViewStack();
+```
+2) Usage
+```jsx
+<ReactNativeSwipeableViewStack
+  onSwipe={ this.onCardSwipe }
+  initialSelectedIndex={ 1 }
+  data={ this.dataArray }
+  renderItem={ ( data ) => this.renderViewItem( data ) }
+/>
 ```
 
 ## License
