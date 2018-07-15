@@ -20,10 +20,12 @@ reactNativeSwipeableViewStack();
 2) Basic Usage
 ```jsx
 <ReactNativeSwipeableViewStack
-  onSwipe={ this.onCardSwipe }
+  onSwipe={ ( swipedIndex ) => this.onCardSwipe( swipedIndex ) }
   initialSelectedIndex={ 1 }
   data={ this.dataArray }
-  renderItem={ ( data ) => this.renderViewItem( data ) }
+  renderItem={ ( element ) => this.renderViewItem( element ) }
+  onItemClicked={ ( element ) => this.onClick( element ) }
+  stackSpacing={ 20 }
 />
 ```
 
@@ -32,8 +34,8 @@ reactNativeSwipeableViewStack();
 * __initialSelectedIndex: number__: (Optional) Element at index to be shown at the top of the stack initially.
 * __stackSpacing: number__: (Optional) Top spacing between stacked views.
 * __data: Array__: Array of Elements that'll be represented by this component.
-* __onItemClicked: Function__: Inputs a function and gets called when the frontmost card is clicked.
-* __renderItem: Function__: Inputs a function that returns view items of stack.
+* __onItemClicked( element: ~Clicked Element ): Function__: Function to be executed when the frontmost card is clicked.
+* __renderItem( element: ~Array Element): Function__: Inputs a function that returns view items of stack.
 
 ## License
 
