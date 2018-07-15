@@ -11,13 +11,13 @@
 $ npm install --save react-native-swipeable-view-stack
 ```
 
-## Import and Usage
+## Import and Basic Usage
 1) Import
 ```js
 var ReactNativeSwipeableViewStack = require('react-native-swipeable-view-stack');
 reactNativeSwipeableViewStack();
 ```
-2) Usage
+2) Basic Usage
 ```jsx
 <ReactNativeSwipeableViewStack
   onSwipe={ this.onCardSwipe }
@@ -26,6 +26,14 @@ reactNativeSwipeableViewStack();
   renderItem={ ( data ) => this.renderViewItem( data ) }
 />
 ```
+
+## Props
+__onSwipe( swipedIndex: number )__: (Optional) Gets called when navigation is about to take place.
+__initialSelectedIndex: number__: (Optional) Element at index to be shown at the top of the stack initially.
+__stackSpacing: number__: (Optional) Top spacing between stacked views.
+__data: Array__: Array of Elements that'll be represented by this component.
+__onItemClicked: Function__: Inputs a function and gets called when the frontmost card is clicked.
+__renderItem: Function__: Inputs a function that returns view items of stack.
 
 ## License
 
