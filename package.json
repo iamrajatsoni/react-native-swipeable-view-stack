@@ -1,7 +1,7 @@
 {
   "name": "react-native-swipeable-view-stack",
-  "version": "1.0.1",
-  "description": "This is an interactive swipeable view stack npm package. Users can pan left or right on the frontmost view to naviagte to the next view. Data set is looped by defaut.",
+  "version": "1.0.4",
+  "description": "This is an interactive swipeable view stack similar to what we see in Tinder or Quick Pay Cards in BookMyShow. Users can pan left or right on the frontmost view to naviagte to the next view. Data set is looped by defaut.",
   "main": "index.js",
   "scripts": {
     "test": "npm test"
