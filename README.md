@@ -1,4 +1,4 @@
-# react-native-swipeable-view-stack [![NPM version](https://badge.fury.io/js/react-native-swipeable-view-stack.svg)](https://npmjs.org/package/react-native-swipeable-view-stack) [![Build Status](https://travis-ci.org/Rajat%20Soni/react-native-swipeable-view-stack.svg?branch=master)](https://travis-ci.org/Rajat%20Soni/react-native-swipeable-view-stack)
+# react-native-swipeable-view-stack [![NPM version](https://badge.fury.io/js/react-native-swipeable-view-stack.svg)](https://npmjs.org/package/react-native-swipeable-view-stack) [![Downloads](https://img.shields.io/npm/dt/react-native-swipeable-view-stack.svg)](https://img.shields.io/npm/dt/react-native-swipeable-view-stack.svg) [![Build Status](https://travis-ci.org/Rajat%20Soni/react-native-swipeable-view-stack.svg?branch=master)](https://travis-ci.org/Rajat%20Soni/react-native-swipeable-view-stack)
 
 > This is an interactive swipeable view stack npm package. Users can pan left or right on the frontmost view to naviagte to the next view. Data set is looped by defaut.
 
